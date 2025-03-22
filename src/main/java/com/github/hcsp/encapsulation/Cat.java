@@ -9,6 +9,11 @@ public class Cat {
     private String name;
     private int age;
 
+    private Cat(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
     /**
      * 创建一只猫的工厂方法。当传入的参数无效，即：
      *
@@ -33,6 +38,7 @@ public class Cat {
         this.age = age;
         this.name = name;
     }
+
 
     public String getName() {
         return name;
